@@ -17,6 +17,8 @@ services:
       - .:/alpha-blog
     ports:
       - "3000:3000"
+    environment:
+      - RAILS_ENV: deveropment
     depends_on:
       - db
     stdin_open: true
